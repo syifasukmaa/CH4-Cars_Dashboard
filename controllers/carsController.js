@@ -120,7 +120,7 @@ const removeCar = async (req, res) => {
     res.status(200).json({
       status: "success",
       message: "Success delete car",
-      data: { car },
+      data: null,
     })
   } catch (err) {
     res.status(400).json({
