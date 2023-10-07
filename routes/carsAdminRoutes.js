@@ -1,5 +1,5 @@
 const express = require("express")
-const carsController = require("../controllers/carsDashboardController")
+const carsController = require("../controllers/carsAdminController")
 const upload = require("../utils/multer")
 
 const router = express.Router()

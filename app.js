@@ -5,7 +5,8 @@ const flash = require("connect-flash")
 const session = require("express-session")
 
 // OUR OWN PACKAGE/MODULE
-const dashboardRouter = require("./routes/carsDashboardRoutes")
+const adminRouter = require("./routes/carsAdminRoutes")
+const carsRouter = require("./routes/carsRoutes")
 
 const app = express()
 
@@ -39,6 +40,7 @@ app.use((req, res, next) => {
   next()
 })
 
-app.use("/", dashboardRouter)
+app.use("/", adminRouter)
+app.use("/", carsRouter)
 
 module.exports = app

@@ -1,6 +1,6 @@
 const { default: mongoose } = require("mongoose")
-const Car = require("../models/carsDashboardModel")
-const cloudinary = require("../utils/cloudinary")
+const Car = require("../models/carsModel")
+const cloudinary = require("../lib/cloudinary")
 const showFormattedDate = require("../utils/formatDate")
 
 const getAllCar = async (req, res) => {
